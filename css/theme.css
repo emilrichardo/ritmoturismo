@@ -1,0 +1,141 @@
+/*
+Theme personalizado para el ministerio publico fiscal
+Emil Gonzalez
+*/
+
+
+html body{
+	font-family: 'Rubik', sans-serif;
+}
+
+.font2{
+	font-family: 'Raleway', sans-serif;
+}
+
+/*fondos*/
+html body .bg-dark, html body .badge-dark{
+	background-color: #000!important;
+}
+
+html body .bg-success,html body .badge-success{
+	background-color: #018640!important;
+
+}
+
+html body .bg-info,html body .badge-info{
+	background-color: #8fd0df!important;
+
+}
+
+html body .bg-light,html body .badge-light{
+	background-color: #ececec!important;
+
+}
+
+
+html body .bg-primary,html body .badge-primary{
+	background-color: #1d1a63!important;
+
+}
+
+html body .bg-warning,html body .badge-warning{
+	background-color: #AEC90B!important;
+
+}
+
+/*color de txt*/
+html body .text-dark{
+	color: #122266!important;
+}
+
+
+html body .text-info{
+	color: #8fd0df!important
+}
+
+
+html body .text-success{
+	color: #018640!important
+}
+
+html body .text-warning{
+	color: #AEC90B!important
+}
+
+/*botones*/
+html body .btn{
+
+	
+}
+
+.btn-dark{
+	background: #000!important;
+}
+
+body .btn-light{
+	border: solid 1px #ccc!important;
+
+}
+
+.btn-outline-light:hover{
+	color: #1d1a63!important
+}
+
+.btn-outline-dark{
+	border-color: #090921!important
+}
+
+
+
+.btn-outline-dark:hover{
+	background-color: #090921!important;
+	color: #fff!important;
+}
+
+
+.btn-outline-info{
+	border-color: #8fd0df!important;
+}
+
+.btn-info{
+	background-color: #8fd0df!important;
+	color: #090921!important;
+	border-color: #498c9b!important;
+}
+
+
+.btn-success{
+	background-color: #018640!important;
+	border: 0!important;
+	color: #fff!important;
+}
+
+.btn-primary{
+	background-color: #1d1a63!important;
+	border: 0!important;
+	color: #fff!important;
+}
+
+
+.btn-primary:hover{
+	background-color: #090921!important;
+}
+
+.btn-warning{
+	background-color: #AEC90B!important;
+	border: 0!important;
+	color: #000!important;
+}
+
+/*badge*/
+html body .badge{
+	-webkit-border-radius: 2px!important;
+border-radius: 2px!important;
+}
+
+
+
+html body .border-secondary{
+	border-color: #eee!important
+}
+
