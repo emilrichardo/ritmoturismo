@@ -126,8 +126,9 @@ box-shadow: 0 0 50px 1px rgba(0,0,0,0.2);
 
 /*feature*/
 .features{}
-.features .card-header{
-	margin-bottom: -33px;
+.features .card-header, .paquetes-list .card-header{
+	margin-bottom: -27px;
+	font-size: .75rem;
 	z-index: 20;
 	background-color: rgba(1, 1, 1, .2);
 }
@@ -137,9 +138,14 @@ box-shadow: 0 0 50px 1px rgba(0,0,0,0.2);
 	height: 0;
 }
 
+
+.features img, .paquetes-list img{
+	height: auto;
+}
+
 .title-feature{
 	margin-top: -75px;
-	padding: 25px 20px;
+	padding: 5px 20px;
 	border-left: solid 8px #AEC90B;
 	background: url("images/bg-gradient.png");
 	background-repeat: repeat-x;
@@ -148,7 +154,7 @@ box-shadow: 0 0 50px 1px rgba(0,0,0,0.2);
 	height: 75px;
 	text-shadow: 0 0 10px #000000;
 	font-style: italic;
-	font-size: 30px;
+	font-size: 26px;
 }
 
 
@@ -206,7 +212,7 @@ section.tipo .rounded-circle{
 /*SINGLE*/
 
 #wpcf-field-banner-top{
-	height: 200px;
+	height: 300px;
 	overflow: hidden;
 	position: relative;
 }

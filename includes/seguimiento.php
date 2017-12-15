@@ -3,13 +3,13 @@
 						<div class="box-border">
 							<div class="row align-items-center py-3  text-center text-md-left">
 								<div class="col-md-6 order-2 order-md-1">
-									<img class="family-laptop img-fluid" src="images/family.png" alt="">
+									<img class="family-laptop img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/family.png" alt="">
 								</div>
 								<div class="col-md-6 order-1 order-md-2">
 									<div class="item-seg">
 										<div class="row align-items-center justify-content-center">
 											<div class="col-4 col-md-3">
-												<img class="img-fluid" src="images/ico-map.png" alt="">
+												<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/ico-map.png" alt="">
 											</div>
 											<div class="col-12 col-md-9">
 												<h3 class="font-weight-light">Ficha médica online</h3>
@@ -21,7 +21,7 @@
 									<div class="item-seg">
 										<div class="row align-items-center justify-content-center">
 											<div class="col-4 col-md-3">
-												<img class="img-fluid" src="images/ico-ficha.png" alt="">
+												<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/ico-ficha.png" alt="">
 											</div>
 											<div class="col-12 col-md-9">
 												<h3 class="font-weight-light">Seguimiento de viajes</h3>

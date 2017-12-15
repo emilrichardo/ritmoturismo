@@ -1,82 +1,55 @@
+				<?php query_posts( array(
+					    'category_name'  => 'paquete',
+					    'posts_per_page' => 3,
+					    'orderby' => 'date',
+					    'post_type' => 'post',
+					    //'meta_key'   => 'wpcf-publicar-home', 
+					  	//'meta_value' => 'super-noticia',  
+					    
+					) ); ?>
+
+					<?php   if ( have_posts() ) { ?>
+
 				<section class="features py-4">
 					<div class="container d-flex d-md-block flex-nowrap flex-column">
 						<h3 class="font-weight-normal mt-4 d-inline-block h4 order-1">Súper promos de Verano</h3>
 						<a href="#" class="btn btn-success btn-sm px-4 ml-4 order-3 order-md-2">Ver todas las promociones<i class="ml-2 fa fa-angle-right "></i></a>
 						<div class="row pt-4  order-2 order-md-3">
-							<div class="col-md-4 item mb-3 mb-md-0">
-								<div class="card">
-									<div class="card-header text-light py-1">
-										Salida 12/12
-									</div>
-									<img class="card-img-top" src="static/bariloche.jpg" alt="Card image cap">
-									<h4 class="title-feature card-title text-light">Bariloche</h4>
-									<div class="card-body py-0">
 
-										<div class="info-feature d-flex justify-content-between align-items-center pb-2">
+							
+							<?php while ( have_posts() ) : the_post(); ?>
+							<div class="col-md-4 item mb-3 ">
+				                <div class="card">
+				                  <div class="card-header text-light py-1">
+				                    <?php echo(types_render_field( 'salida' )); ?>
+				                  </div>
 
-											<span class="price">
-												<small class="text-secondary">
-													Promos desde
-												</small>
+				                  <?php the_post_thumbnail('thumbnail' , ['class' => 'card-img-top w-100']); ?>
+				                  
+				                  <h4 class="title-feature card-title text-light text-uppercase"><span><?php the_title(); ?></span></h4>
+				                  <div class="card-body py-0">
 
-												<span class=" h2 font-italic font-weight-normal d-block">$8500</span>
-											</span>
-											<a href="#" class="btn btn-warning btn-sm px-3">VER MÁS <i class="ml-2 fa fa-angle-right "></i></a>
-										</div>
+				                    <div class="info-feature d-flex justify-content-between align-items-center pb-2">
 
-									</div>
-								</div>					
-							</div><!--finaliza item -->
-							<div class="col-md-4 item mb-3 mb-md-0">
-								<div class="card">
-									<div class="card-header text-light py-1">
-										Salida 12/12
-									</div>
-									<img class="card-img-top" src="static/bariloche.jpg" alt="Card image cap">
-									<h4 class="title-feature card-title text-light">Bariloche</h4>
-									<div class="card-body py-0">
+				                      <span class="price">
+				                        <small class="text-secondary">
+				                          Promos desde
+				                        </small>
 
-										<div class="info-feature d-flex justify-content-between align-items-center pb-2">
+				                        <span class=" h2 font-italic font-weight-normal d-block"><?php echo(types_render_field( 'precios-desde',array( 'separator' => ''  ) )); ?></span>
+				                      </span>
+				                      <a href="<?php the_permalink() ?>" class="btn btn-warning btn-sm px-3">VER MÁS <i class="ml-2 fa fa-angle-right "></i></a>
+				                    </div>
 
-											<span class="price">
-												<small class="text-secondary">
-													Promos desde
-												</small>
-
-												<span class=" h2 font-italic font-weight-normal d-block">$8500</span>
-											</span>
-											<a href="#" class="btn btn-warning btn-sm px-3">VER MÁS <i class="ml-2 fa fa-angle-right "></i></a>
-										</div>
-
-									</div>
-								</div>					
-							</div><!--finaliza item -->
-							<div class="col-md-4 item mb-3 mb-md-0">
-								<div class="card">
-									<div class="card-header text-light py-1">
-										Salida 12/12
-									</div>
-									<img class="card-img-top" src="static/bariloche.jpg" alt="Card image cap">
-									<h4 class="title-feature card-title text-light">Bariloche</h4>
-									<div class="card-body py-0">
-
-										<div class="info-feature d-flex justify-content-between align-items-center pb-2">
-
-											<span class="price">
-												<small class="text-secondary">
-													Promos desde
-												</small>
-
-												<span class=" h2 font-italic font-weight-normal d-block">$8500</span>
-											</span>
-											<a href="#" class="btn btn-warning btn-sm px-3">VER MÁS <i class="ml-2 fa fa-angle-right "></i></a>
-										</div>
-
-									</div>
-								</div>					
-							</div><!--finaliza item -->
+				                  </div>
+				                </div>          
+				              </div><!--finaliza item -->
+				              <?php endwhile; // end of the loop. ?>
+				   
 
 
 						</div>
 					</div>
 				</section>
+
+				<?php } ?>

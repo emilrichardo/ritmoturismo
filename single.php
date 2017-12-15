@@ -10,12 +10,7 @@
  	
 
 
-<ol class="py-2  d-none align-items-center" typeof="BreadcrumbList" vocab="https://schema.org/">
-    <?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-</ol>
+
 
 <?php echo(types_render_field( 'banner-top' , array('output'=>'html','class' => 'img-fluid rounded w-100', 'title' => get_the_title() ))); ?>
  	
@@ -33,7 +28,14 @@
 			</div>
 		</header>
 
-
+<div class="container">
+	<ol class="py-2 bg-white mt-2 rounded align-items-center" typeof="BreadcrumbList" vocab="https://schema.org/">
+	    <?php if(function_exists('bcn_display'))
+	    {
+	        bcn_display();
+	    }?>
+	</ol>
+</div>
 
 		<section class="main-single  bg-white mb-5">
 			<div class="container">
