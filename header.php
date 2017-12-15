@@ -34,6 +34,21 @@
 </head>
 <body <?php body_class(); ?>>
 
+	<div class="top-nav bg-dark text-secondary py-2 text-md-left text-center" >
+		<div class="container">
+			<div class="row justify-content-between ">
+				<span class="text-white"><i class="text-warning mr-2 fa fa-phone"></i><strong> Tel: (0385) 4227177</strong></span>
+				<span class="d-none d-md-inline-block"><i class="text-secondary mr-2 fa fa-map-marker"></i> Entre Ríos 124 - Sgo. del Estero</span>
+				
+					<span class="d-none d-md-inline-block">
+						<a href="mailto:ritmoturismo@hotmail.com"><i class="text-secondary mr-2 fa fa-envelope"></i>ritmoturismo@hotmail.com</a>
+					</span>
+				<span class="d-none d-md-inline-block"><a class="text-primary" href="https://www.facebook.com/RitmoTurismo/"><i class="text-primary mr-2 fa fa-facebook-square"></i> Facebook</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
 	<nav class="navbar navbar-expand-lg  bg-success sticky-top" data-spy="affix" data-offset-top="40" >
 		<div class="container">
 			<a class="navbar-brand" href="<?php echo home_url('/'); ?>">
@@ -47,12 +62,12 @@
 					<?php wp_nav_menu( array( 
 		  									'theme_location' => 'header-menu', 
 		  									'container' => 'span', 
-		  									'menu_class'=>'navbar-nav ml-auto mr-5  font-weight-normal font-italic', 
+		  									'menu_class'=>'navbar-nav ml-auto  font-weight-normal font-italic', 
 		  									'menu_id'=> 'nav',
 		  									// 'before'=>'<i class="fa ico-nav"></i>', 
 		  									'after'=> '<span class="span-line"></span>' ) ); ?>
 		  									
-					<span class="navbar-text text-warning ml-4 font-italic">
+					<span class="navbar-text d-none text-warning ml-4 font-italic">
 						<span class="h4">(0385) 4227177 </span><br>
 						<small class="nav-email text-warning"><i class="fa fa-envelope"></i> ritmoturismo@hotmail.com</small>
 					</span>

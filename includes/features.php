@@ -1,10 +1,10 @@
 				<?php query_posts( array(
-					    'category_name'  => 'paquete',
+					    //'category_name'  => 'paquetes',
 					    'posts_per_page' => 3,
 					    'orderby' => 'date',
-					    'post_type' => 'post',
-					    //'meta_key'   => 'wpcf-publicar-home', 
-					  	//'meta_value' => 'super-noticia',  
+					    'post_type' => 'paquetes',
+					    'meta_key'   => 'wpcf-display-home', 
+					  	'meta_value' => 'paquetes-destacados',  
 					    
 					) ); ?>
 
@@ -13,7 +13,7 @@
 				<section class="features py-4">
 					<div class="container d-flex d-md-block flex-nowrap flex-column">
 						<h3 class="font-weight-normal mt-4 d-inline-block h4 order-1">Súper promos de Verano</h3>
-						<a href="#" class="btn btn-success btn-sm px-4 ml-4 order-3 order-md-2">Ver todas las promociones<i class="ml-2 fa fa-angle-right "></i></a>
+						<a href="http://ritmoturismo.com.ar/paquetes/temporada/verano/" class="btn btn-success btn-sm px-4 ml-4 order-3 order-md-2">Ver todas las promociones<i class="ml-2 fa fa-angle-right "></i></a>
 						<div class="row pt-4  order-2 order-md-3">
 
 							
@@ -24,7 +24,7 @@
 				                    <?php echo(types_render_field( 'salida' )); ?>
 				                  </div>
 
-				                  <?php the_post_thumbnail('thumbnail' , ['class' => 'card-img-top w-100']); ?>
+				                  <?php the_post_thumbnail('medium' , ['class' => 'card-img-top w-100']); ?>
 				                  
 				                  <h4 class="title-feature card-title text-light text-uppercase"><span><?php the_title(); ?></span></h4>
 				                  <div class="card-body py-0">
