@@ -1,6 +1,9 @@
-<div class="banner-paquete">
- 		<?php echo(types_render_field( 'banner-top' , array('class' => 'img-fluid rounded w-100', 'title' => get_the_title() ))); ?>
- 	</div>
+
+
+
+ 		
+
+
 <?php get_header(); ?>
  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -13,6 +16,10 @@
         bcn_display();
     }?>
 </ol>
+
+<?php echo(types_render_field( 'banner-top' , array('output'=>'html','class' => 'img-fluid rounded w-100', 'title' => get_the_title() ))); ?>
+ 	
+
 <header class="header-single bg-success py-5">			 
 			<div class="container"> 
 				<div class="row justify-content-center  text-center py-3">
@@ -25,6 +32,8 @@
 				</div>
 			</div>
 		</header>
+
+
 
 		<section class="main-single  bg-white mb-5">
 			<div class="container">
@@ -105,6 +114,8 @@
 			</div>
 		</section>
 
+		
+
 		<section class="hoteles">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -133,7 +144,7 @@
 							
 						</div>
 					
-						<div class="bg-success rounded mt-2">
+						<div class="bg-success rounded mt-2 <?php echo(types_render_field( 'mostrar' )); ?>">
 							<div class="header-hoteles py-3 px-5">
 								<div class="row align-items-center justify-content-around">
 									<div class="col-md-2">

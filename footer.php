@@ -13,8 +13,8 @@
 								</ul>
 							</div>
 							<div class="col-md-8 text-center text-light py-4">
-								<a target="blank" class="btn btn-dark btn-lg" href="https://www.facebook.com/RitmoTurismo/"><i class="text-light h1 fa fa-facebook"></i></a>
-								<a class="btn btn-dark btn-lg" href="#"><i class="text-light h1 fa fa-youtube"></i></a>
+								<a target="blank" class="btn btn-dark btn-lg" href="https://www.facebook.com/RitmoTurismo/"><i class=" fa fa-facebook"></i></a>
+								<a class="btn btn-dark btn-lg" href="#"><i class=" fa fa-youtube"></i></a>
 
 							</div>
 							<div class="col-md-8 text-light text-center mt-5">

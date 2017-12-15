@@ -205,13 +205,13 @@ section.tipo .rounded-circle{
 
 /*SINGLE*/
 
-.banner-paquete{
+#wpcf-field-banner-top{
 	height: 200px;
 	overflow: hidden;
 	position: relative;
 }
 
-.banner-paquete img{
+#wpcf-field-banner-top img{
 	left: 50%;
  	top: 50%;
  	 transform: translate(-50%, -25%);
@@ -224,7 +224,7 @@ section.tipo .rounded-circle{
 }
 
 @media (max-width: 768px){
-.banner-paquete {
+#wpcf-field-banner-top {
 	height: 100px;
 }
 }/**/
